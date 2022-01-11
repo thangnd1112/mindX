@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lesson 9</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <ol>
+            <li>
+                <a href="#" onclick="bai1()"><span>Bài 1 </span> Kiểm tra tuổi</a>
+            </li>
+            <li>
+                <a href="#" onclick="bai2()"><span>Bài 2 </span>  Viết hàm min (a, b) trả về gía trị nhỏ nhất trong hai số a và
+                        b.</a>
+            </li>
+            <li>
+                <a href="#" onclick="bai3()"><span>Bài 3 </span>  Thay thế Biểu thức hàm bằng các hàm mũi tên</a>
+            </li>
+            <li>
+                <a href="#" onclick="bai4()"><span>Bài 4 </span>  Chức năng yêu cầu đăng nhập</a>
+            </li>
+        </ol>
+        <aside>
+            <div id="bai-1" style="display: none;">
+                <h3>Sử dụng toán tử dấu chấm hỏi? (Toán tử ba ngôi)</h3>
+                <img src="assets/img/img-1.png" alt="toan tu cham hoi">
+            </div>
+            <div id="bai-2" style="display: none;">
+                <h3>Ý tưởng</h3>
+                <ul>
+                    <li>Viết Function kiểm tra a & b có hợp lệ không</li>
+                    <li>Nếu a & b là số, thì tính a - b</li>
+                    <li>Nếu a - b > 0 thì b là số nhỏ hơn</li>
+                    <li>Ngược lại, thì a là số nhỏ hơn</li>
+                    <li>Trường hợp a == b , thì hiển thị ra a hoặc b đều được</li>
+                </ul>
+            </div>
+            <div id="bai-3" style="display: none;">
+                <h3>Sử dụng hàm mũi tên (Arrow function)</h3>
+                <img src="assets/img/img-2.jpg" alt="Arrow Function">
+            </div>
+            <div id="bai-4" style="display: none;">
+                <h3>Ý tưởng</h3>
+                <ul>
+                    <li>Viết Function kiểm tra username có hợp lệ không</li>
+                    <li>Nếu username hợp lệ thì viết function kiểm tra password có hợp lệ không</li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

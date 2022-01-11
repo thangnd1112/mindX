@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrap {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: antiquewhite;
+}
+ol {
+    list-style: none;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-between;
+}
+li {
+    font-size: 20px;
+}
+ol span {
+    font-style: italic;
+}
+ol a , ul li,  aside h3{
+    text-decoration: none;
+    line-height: 1.5;
+    font-size: 20px;
+}
+.wrap > aside h3, ol span {
+    font-size: 30px;
+    font-style: italic;
+    color: green;
+    padding: 15px;
+}
