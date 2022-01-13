@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lesson 10 - JS: iterators, objects</title>
+</head>
+
+<body>
+    <div class="container">
+        <button class="exercise">Bài 1</button>
+        <div class="content">
+            <p>Cho đoạn code sau, sau đó biểu diễn các cách để truy cập được các thuộc tính bên trong object đó</p>
+            <pre>
+                let person = {
+                    name: 'Bob',
+                    occupation: 'web developer',
+                    hobbies: 'painting',
+                };
+            </pre>
+            <div class="demo">
+                <div class="case">
+                    <h4>Cách 1 - Truy cập bằng dấu chấm .</h4>
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-nam-c1">
+                        <label for="ps-nam-c1">person.name</label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-occ-c1">
+                        <label for="ps-occ-c1">person.occupation</label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-hob-c1">
+                        <label for="ps-hob-c1">person.hobbies</label>
+                    </div>
+
+                    <h4>Cách 2 - Truy cập bằng dấu ngoặc vuông</h4>
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-nam-c2">
+                        <label for="ps-nam-c2">person["name"]</label>
+                    </div>
+
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-occ-c2">
+                        <label for="ps-occ-c2">person["occupation"]
+                        </label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-hob-c2">
+                        <label for="ps-hob-c2">person["hobbies"]</label>
+                    </div>
+
+                    <h4>Cách 3 - Sử dụng Object destructuring </h4>
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-nam-c3">
+                        <label for="ps-nam-c3">{name} = person</label>
+                    </div>
+
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-occ-c3">
+                        <label for="ps-occ-c3">{occupation} = person</label>
+                    </div>
+                    <div>
+                        <input class="radio" type="radio" name="obj" id="ps-hob-c3">
+                        <label for="ps-hob-c3">{hobbies} = person</label>
+                    </div>
+                </div>
+                <div class="result">
+                    <h2>Result</h2>
+                    <p id="result"></p>
+                </div>
+            </div>
+
+        </div>
+
+        <button class="exercise">Bài 2</button>
+        <div class="content">
+            <p>Cho object obj, hãy tạo một array chứa key của tất cả các property của obj và đều viết hoa</p>
+            <pre>
+                let obj = {
+                    b: 2,
+                    a: 1,
+                    c: 3,
+                };
+            </pre>
+
+            <div class="demo">
+                <div class="case">
+                    <h2>Ý tưởng</h2>
+                    <ul>
+                        <li>Dùng method <strong>Object.keys</strong> để lấy các key của Object,
+                            sau đó lưu vào 1 biến, biến này sẽ lưu trữ 1 mảng là
+                            kết quả trả về từ method trên.
+                        </li>
+                        <li>Dùng <strong>vòng lặp for</strong> hoặc method <strong>forEach</strong> để duyệt 
+                            qua từng phần tử của mảng, với mỗi lần lặp thì dùng
+                            method <strong>toUpperCase</strong> để in hoa.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="result">
+                    <h2>Result</h2>
+                    <p id="before-arr"></p>
+                    <p id="after-arr"></p>
+                </div>
+            </div>
+        </div>
+
+        <button class="exercise">Bài 3</button>
+        <div class="content">
+            <p>Tạo một object mới có tên **family** và sử dụng Object **myFamily** như là prototype của object đó</p>
+            <p>Khởi tạo hàm tạo Family</p>
+            <pre>
+            function Family(quantity,member,location) {
+                this.quantity = quantity,
+                this.member = member,
+                this.location = location
+            }
+            </pre>
+            <p>Tạo object mới từ hàm tạo Family</p>
+            <pre>
+            let newFamily = new Family(myFamily.quantity, myFamily.member, myFamily.location);
+
+            </pre>
+            <p id="result-b3"></p>
+        </div>
+
+        <button class="exercise">Bài 4</button>
+        <div class="content">
+            <p>Thay đổi giá trị 6 bằng 606 bằng 2 cách</p>
+            <pre>
+                let obj = {
+                    foo: { a: "hello", b: "world" },
+                    bar: ["example", "mem", null, { xyz: 6 }, 88],
+                    qux: [4, 8, 12]
+                  };
+            </pre>
+
+            <p>Cách 1 - Setter trực tiếp</p>
+            <pre>
+                obj.bar[3].xyz = 606;
+            </pre>
+           <p>Cách 2: Dùng method Object.assign</p>
+           <pre>
+                Object.assign(objB4.bar[3],{xyz:606});
+           </pre>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
