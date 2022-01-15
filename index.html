@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/lib.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lesson 11</title>
+</head>
+
+<body>
+    <div id="root">
+        <div class="container" id="mode">
+            <div class="header">
+                <p id="status">...</p>
+            </div>
+            <div class="main">
+                <!-- change background -->
+                <div class="changeBackground flex jc-sa px-2">
+                    <div id="btnChangeColor" class="flex fd-cl ai-ct jc-sb btn ta-ct">
+                        <div class="btnIcon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <div class="btnCaption">Change</div>
+                    </div>
+                    <div id="btnDefautColor" class="flex fd-cl ai-ct jc-sb btn ta-ct">
+                        <div class="btnIcon">
+                            <i class="fas fa-undo-alt"></i>
+                        </div>
+                        <div class="btnCaption">Defaut</div>
+                    </div>
+                    <h3 class="title">Background</h3>
+                </div>
+
+                <!-- counter  -->
+                <div class="counter flex ai-ct jc-sa px-2">
+                    <div class="counter-wrapper">
+                        <div id="plus" class="item">
+                            <i class="fas fa-plus"></i>
+                        </div>
+                        <div id="reset" class="item">
+                            <i class="fas fa-undo-alt"></i>
+                        </div>
+                        <div id="minus" class="item">
+                            <i class="fas fa-minus"></i>
+                        </div>
+                        <h3 class="title">Counter</h3>
+                    </div>
+
+                    <div class="counter-wrapper">
+                        <div id="darkMode" class="item">
+                            <i class="fas fa-moon"></i>
+                        </div>
+                        <div id="lightMode" class="item">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <h3 class="title">Mode</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>

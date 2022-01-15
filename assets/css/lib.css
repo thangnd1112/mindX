@@ -1,0 +1,29 @@
+.flex {
+    display: flex;
+}
+.fd-cl {
+    flex-direction: column;
+}
+.jc-sb {
+    justify-content: space-between !important;
+}
+
+.jc-sa {
+    justify-content: space-around !important;
+}
+
+.ai-ct {
+    align-items: center !important;
+}
+
+.ta-ct {
+    text-align: center;
+}
+
+.cursor-pt {
+    cursor: pointer;
+}
+
+.px-2 {
+    padding: 20px 0;
+}
